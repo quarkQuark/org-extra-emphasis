@@ -1,8 +1,7 @@
 #+TITLE: org-extra-emphasis
 #+SUBTITLE: Extra Emphasis markers for Emacs Org mode
 
-This library provides two additional markers =!!= and =!@= over and
-above those in =org-emphasis-alist=.
+This library provides two additional markers =!!= and =!@= over and above those in =org-emphasis-alist=.
 
 - Text enclosed in =!!= is highlighted in yellow, and exported likewise
 - Text enclosed in =!@= is displayed in red, and exported likewise
@@ -11,15 +10,19 @@ Following backends are supported: HTML and enhanced ODT
 
 * Contents :TOC:QUOTE:
 #+BEGIN_QUOTE
-- [[#setup][Setup]]
 - [[#changes-to-this-fork][Changes to this fork]]
-- [[#test-run][Test Run]]
+- [[#setup][Setup]]
+- [[#demonstration][Demonstration]]
 - [[#screenshots][Screenshots]]
   - [[#example-org-file-as-viewed-in-emacs][Example org file as viewed in Emacs]]
   - [[#example-html-output-as-viewed-in-firefox][Example html output as viewed in Firefox]]
   - [[#example-odt-output-as-viewed-in-libreoffice][Example odt output as viewed in LibreOffice]]
 - [[#customization][Customization]]
 #+END_QUOTE
+
+* Changes to this fork
+
+- Removed =ox-odt= dependency so it installs correctly with =use-package=.
 
 * Setup
 
@@ -29,14 +32,9 @@ Add the following to your =user-init-file= and resetart Emacs.
   (require 'org-extra-emphasis)
 #+end_example
 
-* Changes to this fork
+* Demonstration
 
-- Removed =ox-odt= dependency so it installs correctly with =use-package=.
-
-* Test Run
-
-1. Create an =org= file, say =test.org= and fill it with following
-   content.
+1. Create an =org= file, say =example.org= and fill it with following content.
 
 #+begin_example
 
@@ -87,35 +85,32 @@ Add the following to your =user-init-file= and resetart Emacs.
   
 #+end_example
 
-2. When in =test.org= buffer, note that portions of text marked with
-   =!!= and =!@= are fontified as described above.
+2. When in =test.org= buffer, note that portions of text marked with =!!= and =!@= are fontified as described above.
 
 3. Export the file to HTML with =C-c C-e h O=.
 
-   Note that the text enclosed in the above emphasis markers are
-   colorized in HTML file.
+   Note that the text enclosed in the above emphasis markers are colorized in HTML file.
 
 4. Export the file to ODT with =C-c C-e o O=.
 
-   Note that the text enclosed in the above emphasis markers are
-   colorized in ODT file.
+   Note that the text enclosed in the above emphasis markers are colorized in ODT file.
 
 * Screenshots
 
 ** Example org file as viewed in Emacs
 
 #+CAPTION: Example org file as viewed in Emacs
-[[file:screenshots/test-org.png]]
+[[file:screenshots/org.png]]
 
 ** Example html output as viewed in Firefox
 
 #+CAPTION: Example html output as viewed in Firefox
-[[file:screenshots/test-html.png]]
+[[file:screenshots/html.png]]
 
 ** Example odt output as viewed in LibreOffice
 
 #+CAPTION: Example odt output as viewed in LibreOffice
-[[file:screenshots/test-odt.png]]
+[[file:screenshots/odt.png]]
 
 * Customization
 

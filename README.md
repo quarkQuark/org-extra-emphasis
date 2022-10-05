@@ -32,7 +32,7 @@ Add the following to your `user-init-file` and resetart Emacs.
 
 ##  Test Run
 
-1. Create an `org` file, say `org-export-emphasis.org` and fill it with following content.
+1. Create an `org` file, say `test.org` and fill it with following content.
 
 ```
 	  #+TITLE: Test file for ==org-extra-emphasis== library
@@ -82,7 +82,7 @@ Add the following to your `user-init-file` and resetart Emacs.
 	  
 ```
 
-2. When in `org-extra-emphasis.org` buffer, note that portions of text
+2. When in `test.org` buffer, note that portions of text
    marked with `!!` and `!@` are fontified as described above.
 
 3. Export the file to HTML with `C-c C-e h O`.
@@ -97,23 +97,23 @@ Add the following to your `user-init-file` and resetart Emacs.
 
 ##  Screenshots
 
-### `org-extra-emphasis.org` as viewed in Emacs
+### `test.org` as viewed in Emacs
 
-![`org-extra-emphasis.org` as viewed in Emacs](https://raw.githubusercontent.com/kjambunathan/org-extra-emphasis/main/screenshots/org-extra-emphasis.org.emacs.png)
+![`test.org` as viewed in Emacs](screenshots/test-org.png)
 
-### `org-extra-emphasis.html` as viewed in Firefox
+### `test.html` as viewed in Firefox
 
-![`org-extra-emphasis.org` as viewed in Firefox](https://raw.githubusercontent.com/kjambunathan/org-extra-emphasis/main/screenshots/org-extra-emphasis.html.firefox.png)
+![`test.org` as viewed in Firefox](screenshots/test-html.png)
 
-### `org-extra-emphasis.odt` as viewed in LibreOffice
+### `test.odt` as viewed in LibreOffice
 
-![`org-extra-emphasis.org` as viewed in
-LibreOffice](https://raw.githubusercontent.com/kjambunathan/org-extra-emphasis/main/screenshots/org-extra-emphasis.odt.libreoffice.png)
+![`test.org` as viewed in
+LibreOffice](screenshots/test-odt.png)
 
-### `org-extra-emphasis.pdf` as exported by LibreOffice
+### `test.pdf` as exported by LibreOffice
 
-![`org-extra-emphasis.org` as viewed in
-LibreOffice](https://raw.githubusercontent.com/kjambunathan/org-extra-emphasis/main/screenshots/org-extra-emphasis.pdf.libreoffice.png)
+![`test.org` as viewed in
+LibreOffice](screenshots/test-pdf-lo.png)
 
 ##  Customization
 

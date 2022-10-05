@@ -7,7 +7,6 @@
 ;; Keywords: org
 ;; Homepage: https://github.com/kjambunathan/org-extra-emphasis
 ;; Version: 1.0
-;; Package-Requires: ((ox-odt "9.5.3.467"))
 
 ;; This file is NOT part of GNU Emacs.
 
